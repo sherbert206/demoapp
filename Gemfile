@@ -1,20 +1,24 @@
 source 'http://rubygems.org'
+ruby '2.3.3'
 
-gem 'rails', '3.2.13'
+gem 'rails', '5.0.1'
 
 group :development do
-	gem 'sqlite3', '1.3.5'
+	gem 'sqlite3'
 end
 
 group :assets do
-	gem 'sass-rails', '3.2.4'
-	gem 'coffee-rails', '3.2.2'
+	gem 'sass-rails'
+	gem 'coffee-rails'
 	
 	gem 'uglifier', '1.2.3'
 end
 
-gem 'jquery-rails', '~>2.0.0'
+gem 'jquery-rails'
 
 group :production do
 	gem 'pg', '0.12.2'
 end
+
+gem 'tzinfo-data'
+gem 'turbolinks'
