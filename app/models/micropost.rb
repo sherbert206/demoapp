@@ -1,6 +1,5 @@
 class Micropost < ApplicationRecord
-	validates :content, :length => { :maximum => 141 }
-	def create
-		content.user_id
-	end
+	belongs_to :user
+	validates :content, length: { maximum: 140},
+		presence: true
 end
